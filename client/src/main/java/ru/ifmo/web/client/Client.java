@@ -1,21 +1,19 @@
 package ru.ifmo.web.client;
 
-import javax.xml.datatype.DatatypeConfigurationException;
 import javax.xml.datatype.DatatypeFactory;
 import javax.xml.datatype.XMLGregorianCalendar;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-
 import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.GregorianCalendar;
 
 public class Client {
-    public static void main(String... args) throws SQLException_Exception, IOException, DatatypeConfigurationException {
+    public static void main(String... args) throws SQLException_Exception, IOException {
         URL url = new URL("http://localhost:8080/astartes?wsdl");
-        AstartesServiceService astartesService = new AstartesServiceService(url);
+        Astartes_Service astartesService = new Astartes_Service(url);
         AstartesService astartesPort = astartesService.getAstartesServicePort();
 
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));

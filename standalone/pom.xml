@@ -45,7 +45,7 @@
                             <destDir>${project.build.directory}/client-classes</destDir>
                             <xnocompile>false</xnocompile>
                             <wsdlFiles>
-                                <wsdlFile>${project.build.directory}/generated-sources/wsdl/AstartesServiceService.wsdl
+                                <wsdlFile>${project.build.directory}/generated-sources/wsdl/Astartes.wsdl
                                 </wsdlFile>
                             </wsdlFiles>
                             <packageName>ru.ifmo.web.client</packageName>

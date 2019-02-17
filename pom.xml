@@ -19,6 +19,7 @@
         <module>database</module>
         <module>standalone</module>
         <module>client</module>
+        <module>deploy</module>
     </modules>
 
     <build>

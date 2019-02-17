@@ -1,10 +1,11 @@
-package ru.ifmo.web.service;
+package ru.ifmo.web.deploy;
 
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 import ru.ifmo.web.database.dao.AstartesDAO;
 import ru.ifmo.web.database.entity.Astartes;
 
+import javax.inject.Inject;
 import javax.jws.WebMethod;
 import javax.jws.WebParam;
 import javax.jws.WebService;
@@ -12,10 +13,11 @@ import java.sql.SQLException;
 import java.util.Date;
 import java.util.List;
 
-@WebService(serviceName = "astartes", targetNamespace = "astartes_namespace")
+@WebService(serviceName = "astartes",targetNamespace = "astartes_namespace")
 @AllArgsConstructor
 @NoArgsConstructor
 public class AstartesService {
+    @Inject
     private AstartesDAO astartesDAO;
 
     @WebMethod
