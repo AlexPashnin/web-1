@@ -61,7 +61,7 @@ public class AstartesDAO {
             i++;
         }
         if (name != null) {
-            if(!statements.isEmpty()) {
+            if (!statements.isEmpty()) {
                 query.append(" AND ");
             }
             query.append(NAME).append("= ?");
@@ -69,7 +69,7 @@ public class AstartesDAO {
             i++;
         }
         if (title != null) {
-            if(!statements.isEmpty()) {
+            if (!statements.isEmpty()) {
                 query.append(" AND ");
             }
             query.append(TITLE).append("= ?");
@@ -77,7 +77,7 @@ public class AstartesDAO {
             i++;
         }
         if (position != null) {
-            if(!statements.isEmpty()) {
+            if (!statements.isEmpty()) {
                 query.append(" AND ");
             }
             query.append(POSITION).append("= ?");
@@ -85,7 +85,7 @@ public class AstartesDAO {
             i++;
         }
         if (planet != null) {
-            if(!statements.isEmpty()) {
+            if (!statements.isEmpty()) {
                 query.append(" AND ");
             }
             query.append(PLANET).append("= ?");
@@ -93,7 +93,7 @@ public class AstartesDAO {
             i++;
         }
         if (birthdate != null) {
-            if(!statements.isEmpty()) {
+            if (!statements.isEmpty()) {
                 query.append(" AND ");
             }
             query.append(BIRTHDATE).append("= ?");
